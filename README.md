@@ -38,11 +38,12 @@ Constructors of buttons, actions and other classes are templates, and can take s
 
 create QAction like this:
 
+	Action act(tr("Text"));
+	//parameters in any order:
 	Action act(tr("Text"), QIcon(":/iconPath"), tr("tooltip"), QKeySequence("Ctrl+f"));
-	//parameters in any order
 	Action act(QIcon(":/iconPath"), tr("Text"), tr("tooltip"), QKeySequence("Ctrl+f"));
-	//etc
 	Action act(QIcon(":/onlyIcon"));
+	//etc
 
 Use properties instead of set* functions:
 
