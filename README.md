@@ -43,7 +43,8 @@ create QAction like this:
 	Action act(tr("Text"), QIcon(":/iconPath"), tr("tooltip"), QKeySequence("Ctrl+f"));
 	Action act(QIcon(":/iconPath"), tr("Text"), tr("tooltip"), QKeySequence("Ctrl+f"));
 	Action act(QIcon(":/onlyIcon"));
-	//etc
+	//buttons use the same approach
+	ToolButton btn(QIcon(), QKeySequence("..."));
 
 Use properties instead of set* functions:
 
@@ -54,6 +55,7 @@ Use properties instead of set* functions:
 	msgBox("Visual Basic style!");
 
 More complex examples, how to place several widgets like html:
+
 	Widget w;
 	VBoxLayout lay(w);
 	
