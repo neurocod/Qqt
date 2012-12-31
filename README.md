@@ -1,14 +1,12 @@
-Qqt
-===
-
-Quick Qt - syntactic sugar for Qt.
-----------------------------------
+Qqt = Quick Qt - syntactic sugar for Qt.
+----------------------------------------
 Write Qt code like html.
 Examples to compare Qt and Qqt:
 
 	//Qt:
 	QVBoxLayout* layout = new QVBoxLayout();
 	window->setLayout(layout);
+	
 	//Qqt analogue:
 	VBoxLayout lay(window);
 
@@ -29,7 +27,7 @@ Examples to compare Qt and Qqt:
 	//or
 	PushButton btn(QString(), QIcon());//parameters in any order
 
-Constructors of buttons, actions and other classes are templates, and can take few arguments, from 0 to more, where:
+Constructors of buttons, actions and other classes are templates, and can take several arguments, from 0 to more, where:
 
 	* first QString, if specified, is for setText
 	* second QString, if specified, is for setToolTip
