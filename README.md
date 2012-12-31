@@ -34,4 +34,24 @@ Constructors of buttons, actions and other classes are templates, and can take f
 	* first QString, if specified, is for setText
 	* second QString, if specified, is for setToolTip
 	* QIcon, if specified, is for setIcon
-	* other classes support additional parameters, for example - Qt::ShortcutContext (for setShortcutContext), QKeySequence for setShortcut etc.
+	* QKeySequence for setShortcut
+	* Qt::ShortcutContext for setShortcutContext
+	* etc
+
+create QAction like this:
+
+	Action act(tr("Text"), QIcon(":/iconPath"), tr("tooltip"), QKeySequence("Ctrl+f"));
+	//parameters in any order
+	Action act(QIcon(":/iconPath"), tr("Text"), tr("tooltip"), QKeySequence("Ctrl+f"));
+	//etc
+	Action act(QIcon(":/onlyIcon"));
+
+Use properties instead of set* functions:
+
+	Action act;
+	act.tooltip = "";
+	act.shortcut = QKeySequence("Ctrl+F");
+
+And the last -
+
+	msgBox("Hello from Visual Basic!");
