@@ -1,7 +1,6 @@
 Qqt = Quick Qt - syntactic sugar for Qt.
 ----------------------------------------
-Write Qt code like html.
-Examples to compare Qt and Qqt:
+Write Qt code like html. Examples to compare Qt and Qqt:
 
 	//Qt:
 	QVBoxLayout* layout = new QVBoxLayout();
@@ -72,3 +71,6 @@ More complex examples, how to place several widgets like html:
 		lay2 << act1;
 	}
 	lay << new QTextEdit();
+
+License: BSD-like
+-----------------
