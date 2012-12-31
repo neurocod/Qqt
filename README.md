@@ -78,6 +78,7 @@ BSD-like
 How to include
 --------------
 There are few ways:
+
 1) copy all sources: create dir Qqt inside your project, place there all files from Qqt/src folder, include Qqt/includeMe.h in your precmpiled header file
 
 2) make traditional library, and commit it here so others can use it :) currently I use non-git version control system for my Qqt copy
