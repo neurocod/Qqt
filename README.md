@@ -29,11 +29,11 @@ Examples to compare Qt and Qqt:
 
 Constructors of buttons, actions and other classes are templates, and can take several arguments, from 0 to more, where:
 
-* first QString, if specified, is for setText
-* second QString, if specified, is for setToolTip
-* QIcon, if specified, is for setIcon
-* QKeySequence for setShortcut
-* Qt::ShortcutContext for setShortcutContext
+* first QString, if specified, is for setText()
+* second QString, if specified, is for setToolTip()
+* QIcon, if specified, is for setIcon()
+* QKeySequence for setShortcut()
+* Qt::ShortcutContext for setShortcutContext()
 * etc
 
 create QAction like this:
