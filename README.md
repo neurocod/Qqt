@@ -77,5 +77,6 @@ License
 BSD-like
 How to include
 --------------
+
 # copy all sources: create dir Qqt inside your project, place there all files from Qqt/src folder
 # make traditional library, and commit it here so others can use it :) currently I use non-git version control system for my Qqt copy
