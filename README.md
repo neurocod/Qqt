@@ -30,6 +30,7 @@ Examples to compare Qt and Qqt:
 	PushButton btn(QString(), QIcon());//parameters in any order
 
 Constructors of buttons, actions and other classes are templates, and can take few arguments, from 0 to more, where:
+
 	* first QString, if specified, is for setText
 	* second QString, if specified, is for setToolTip
 	* QIcon, if specified, is for setIcon
