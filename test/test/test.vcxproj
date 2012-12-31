@@ -83,6 +83,51 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\src\AbstractButtonPropertyRedirects.cpp" />
+    <ClCompile Include="..\..\src\AbstractSpinBoxPropertyRedirects.cpp" />
+    <ClCompile Include="..\..\src\Action.cpp" />
+    <ClCompile Include="..\..\src\BoxLayout.cpp" />
+    <ClCompile Include="..\..\src\ButtonGroup.cpp" />
+    <ClCompile Include="..\..\src\CheckBox.cpp" />
+    <ClCompile Include="..\..\src\ComboBox.cpp" />
+    <ClCompile Include="..\..\src\CompactHBoxLayout.cpp" />
+    <ClCompile Include="..\..\src\CompactVBoxLayout.cpp" />
+    <ClCompile Include="..\..\src\DirString.cpp" />
+    <ClCompile Include="..\..\src\FileFacility.cpp" />
+    <ClCompile Include="..\..\src\FileReader.cpp" />
+    <ClCompile Include="..\..\src\FileWriter.cpp" />
+    <ClCompile Include="..\..\src\FormLayout.cpp" />
+    <ClCompile Include="..\..\src\GridLayout.cpp" />
+    <ClCompile Include="..\..\src\GroupBox.cpp" />
+    <ClCompile Include="..\..\src\HBoxLayout.cpp" />
+    <ClCompile Include="..\..\src\Label.cpp" />
+    <ClCompile Include="..\..\src\Layout.cpp" />
+    <ClCompile Include="..\..\src\LineEdit.cpp" />
+    <ClCompile Include="..\..\src\Menu.cpp" />
+    <ClCompile Include="..\..\src\MsgBox.cpp" />
+    <ClCompile Include="..\..\src\NLStyle.cpp" />
+    <ClCompile Include="..\..\src\Object.cpp" />
+    <ClCompile Include="..\..\src\ProgressBar.cpp" />
+    <ClCompile Include="..\..\src\PushButton.cpp" />
+    <ClCompile Include="..\..\src\RadioButton.cpp" />
+    <ClCompile Include="..\..\src\RotatableToolBar.cpp" />
+    <ClCompile Include="..\..\src\Settings.cpp" />
+    <ClCompile Include="..\..\src\SignalEmitter.cpp" />
+    <ClCompile Include="..\..\src\SpinBox.cpp" />
+    <ClCompile Include="..\..\src\Splitter.cpp" />
+    <ClCompile Include="..\..\src\TabWidget.cpp" />
+    <ClCompile Include="..\..\src\ToolBar.cpp" />
+    <ClCompile Include="..\..\src\ToolButton.cpp" />
+    <ClCompile Include="..\..\src\ToString.cpp" />
+    <ClCompile Include="..\..\src\VBoxLayout.cpp" />
+    <ClCompile Include="..\..\src\Widget.cpp" />
+    <ClCompile Include="..\..\src\WidgetPropertyRedirects.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_RotatableToolBar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SignalEmitter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_TestMainWindow.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -91,6 +136,12 @@
       </PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
       </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_RotatableToolBar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SignalEmitter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Release\moc_TestMainWindow.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
@@ -103,6 +154,70 @@
     <ClCompile Include="TestMainWindow.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\src\AbstractButtonPropertyRedirects.h" />
+    <ClInclude Include="..\..\src\AbstractSpinBoxPropertyRedirects.h" />
+    <ClInclude Include="..\..\src\Action.h" />
+    <ClInclude Include="..\..\src\BoxLayout.h" />
+    <ClInclude Include="..\..\src\ButtonGroup.h" />
+    <ClInclude Include="..\..\src\ByteArrayWithDataStream.h" />
+    <ClInclude Include="..\..\src\CheckBox.h" />
+    <ClInclude Include="..\..\src\ComboBox.h" />
+    <ClInclude Include="..\..\src\CompactHBoxLayout.h" />
+    <ClInclude Include="..\..\src\CompactVBoxLayout.h" />
+    <ClInclude Include="..\..\src\CtorProcessorT.h" />
+    <ClInclude Include="..\..\src\DirString.h" />
+    <ClInclude Include="..\..\src\FileFacility.h" />
+    <ClInclude Include="..\..\src\FileReader.h" />
+    <ClInclude Include="..\..\src\FileWriter.h" />
+    <ClInclude Include="..\..\src\FormLayout.h" />
+    <ClInclude Include="..\..\src\GridLayout.h" />
+    <ClInclude Include="..\..\src\GroupBox.h" />
+    <ClInclude Include="..\..\src\HBoxLayout.h" />
+    <ClInclude Include="..\..\src\includeMe.h" />
+    <ClInclude Include="..\..\src\Label.h" />
+    <ClInclude Include="..\..\src\Layout.h" />
+    <ClInclude Include="..\..\src\LineEdit.h" />
+    <ClInclude Include="..\..\src\Menu.h" />
+    <ClInclude Include="..\..\src\MsgBox.h" />
+    <ClInclude Include="..\..\src\New.h" />
+    <ClInclude Include="..\..\src\NLStyle.h" />
+    <ClInclude Include="..\..\src\Object.h" />
+    <ClInclude Include="..\..\src\preprocessor.h" />
+    <ClInclude Include="..\..\src\ProgressBar.h" />
+    <ClInclude Include="..\..\src\PropertyRedirect.h" />
+    <ClInclude Include="..\..\src\PushButton.h" />
+    <ClInclude Include="..\..\src\RadioButton.h" />
+    <ClInclude Include="..\..\src\Settings.h" />
+    <ClInclude Include="..\..\src\SpinBox.h" />
+    <ClInclude Include="..\..\src\Splitter.h" />
+    <ClInclude Include="..\..\src\TabWidget.h" />
+    <ClInclude Include="..\..\src\ToolBar.h" />
+    <ClInclude Include="..\..\src\ToolButton.h" />
+    <ClInclude Include="..\..\src\TopResult.h" />
+    <ClInclude Include="..\..\src\ToString.h" />
+    <ClInclude Include="..\..\src\VBoxLayout.h" />
+    <ClInclude Include="..\..\src\Widget.h" />
+    <ClInclude Include="..\..\src\WidgetPropertyRedirects.h" />
+    <CustomBuild Include="..\..\src\SignalEmitter.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing SignalEmitter.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp" "-fpch.h" "-f../../../../src/SignalEmitter.h"  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing SignalEmitter.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp" "-fpch.h" "-f../../../../src/SignalEmitter.h"  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui"</Command>
+    </CustomBuild>
+    <CustomBuild Include="..\..\src\RotatableToolBar.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing RotatableToolBar.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp" "-fpch.h" "-f../../../../src/RotatableToolBar.h"  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing RotatableToolBar.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp" "-fpch.h" "-f../../../../src/RotatableToolBar.h"  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui"</Command>
+    </CustomBuild>
     <ClInclude Include="pch.h" />
     <CustomBuild Include="TestMainWindow.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
