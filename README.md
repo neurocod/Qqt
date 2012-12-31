@@ -6,23 +6,17 @@ Quick Qt - syntactic sugar for Qt.
 
 Examples to compare Qt and Qqt:
 
-
-	QVBoxLayout* layout = new QVBoxLayout();//Qt
-
+	//Qt:
+	QVBoxLayout* layout = new QVBoxLayout();
 	window->setLayout(layout);
+	//Qqt analogue:
+	VBoxLayout lay(window);
 
-VBoxLayout lay(window);//Qqt
+	layout->addWidget(w);//Qt
+	layout << w;//Qqt
 
-layout->addWidget(w);//Qt
+	layout->addChildLayout(lay2);//Qt
+	layout << lay2;//Qqt
 
-layout << w;//Qqt
-
-
-layout->addChildLayout(lay2);//Qt
-
-layout << lay2;//Qqt
-
-
-layout->addWidget(new QLabel(tr("Text")));
-
-layout << tr("Text");
+	layout->addWidget(new QLabel(tr("Text")));
+	layout << tr("Text");
