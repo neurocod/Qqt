@@ -2,13 +2,14 @@ Qqt
 ===
 
 Quick Qt - syntactic sugar for Qt.
+----------------------------------
 
-Compare Qt and Qqt:
+Examples to compare Qt and Qqt:
 
 
-QVBoxLayout* layout = new QVBoxLayout();//Qt
+	QVBoxLayout* layout = new QVBoxLayout();//Qt
 
-window->setLayout(layout);
+	window->setLayout(layout);
 
 VBoxLayout lay(window);//Qqt
 
