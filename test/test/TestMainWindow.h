@@ -1,19 +1,9 @@
-#ifndef TESTMAINWINDOW_H
-#define TESTMAINWINDOW_H
+//TestMainWindow.h by Kostya Kozachuck as neurocod
+#pragma once
 
-#include <QtGui/QMainWindow>
-#include "ui_testmainwindow.h"
-
-class TestMainWindow : public QMainWindow
-{
+class TestMainWindow : public QMainWindow {
 	Q_OBJECT
-
-public:
-	TestMainWindow(QWidget *parent = 0, Qt::WFlags flags = 0);
-	~TestMainWindow();
-
-private:
-	Ui::TestMainWindowClass ui;
+	public:
+		TestMainWindow(QWidget *parent = 0, Qt::WFlags flags = 0);
+		~TestMainWindow();
 };
-
-#endif // TESTMAINWINDOW_H
