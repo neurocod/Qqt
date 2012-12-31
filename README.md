@@ -50,6 +50,22 @@ Use properties instead of set* functions:
 	act.tooltip = "";
 	act.shortcut = QKeySequence("Ctrl+F");
 
-And the last -
+	msgBox("Visual Basic style!");
 
-	msgBox("Hello from Visual Basic!");
+More complex examples, how to place several widgets like html:
+	Widget w;
+	VBoxLayout lay(w);
+	
+	lay << tr("See toolbar below:");
+	{
+		HBoxLayout lay2(lay);
+		
+		Action act0(tr("First action"));
+		connect(act0, SIGNAL(triggered()), w, SLOT(a0()));
+		lay2 << act0;
+
+		Action act1(tr("Second action"));
+		connect(act1, SIGNAL(triggered()), w, SLOT(a1()));
+		lay2 << act1;
+	}
+	lay << new QTextEdit();
