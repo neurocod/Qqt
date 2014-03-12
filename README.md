@@ -21,21 +21,22 @@ Write Qt code like html. Examples to compare Qt and Qqt:
 	QPushButton*btn = new QPushButton();
 	btn->setIcon(QIcon());
 	btn->setText(QString());
+	btn->set...(...)
 	//Qqt:
-	PushButton btn(QIcon(), QString());
+	PushButton btn(QIcon(), QString(), ...);
 	//or
-	PushButton btn(QString(), QIcon());//parameters in any order
+	PushButton btn(QString(), QIcon(), ...);//parameters in any order
 
 Constructors of buttons, actions and other classes are templates, and can take several arguments, from 0 to more, where:
 
-* first QString, if specified, is for setText()
-* second QString, if specified, is for setToolTip()
+* first QString parameter, if specified, is for setText()
+* second QString parameter, if specified, is for setToolTip()
 * QIcon, if specified, is for setIcon()
-* QKeySequence for setShortcut()
-* Qt::ShortcutContext for setShortcutContext()
+* QKeySequence is for setShortcut()
+* Qt::ShortcutContext is for setShortcutContext()
 * etc
 
-create QAction like this:
+Using this approach create QAction like this:
 
 	Action act(tr("Text"));
 	//parameters in any order:
