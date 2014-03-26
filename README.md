@@ -3,20 +3,20 @@ Qqt = Quick Qt - syntactic sugar for Qt.
 Write Qt code like html. Examples to compare Qt and Qqt:
 
 	//Qt:
-	QVBoxLayout* layout = new QVBoxLayout();
-	window->setLayout(layout);
+	QVBoxLayout* lay1 = new QVBoxLayout();
+	window->setLayout(lay1);
 	
 	//Qqt analogue:
-	VBoxLayout lay(window);
+	VBoxLayout lay2(window);
 
-	layout->addWidget(w);//Qt
-	layout << w;//Qqt
+	lay1->addWidget(w);//Qt
+	lay2 << w;//Qqt
 
-	layout->addChildLayout(lay2);//Qt
-	layout << lay2;//Qqt
+	lay1->addChildLayout(lay3);//Qt
+	lay2 << lay3;//Qqt
 
-	layout->addWidget(new QLabel(tr("Text")));
-	layout << tr("Text");
+	lay1->addWidget(new QLabel(tr("Text")));
+	lay2 << tr("Text");
 
 	QPushButton*btn = new QPushButton();
 	btn->setIcon(QIcon());
