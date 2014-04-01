@@ -1,4 +1,5 @@
 //RotatableToolBar.cpp by Kostya Kozachuck as neurocod - 21.11.2011 10:31:45
+//BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "RotatableToolBar.h"
 #ifdef USE_QXT

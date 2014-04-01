@@ -1,4 +1,5 @@
 //MsgBox.cpp by Kostya Kozachuck as neurocod - 23.12.2011 6:34:33
+//BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "MsgBox.h"
 

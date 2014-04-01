@@ -1,4 +1,5 @@
 ﻿//preprocessor.h by Kostya Kozachuck as neurocod - 27.11.2007 21:31:17
+//BSD license https://github.com/neurocod/Qqt
 #pragma once
 
 #define EMBED_QPOINTER_AND_CAST(ClassName) public:\

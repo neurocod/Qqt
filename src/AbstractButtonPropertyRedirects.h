@@ -1,4 +1,5 @@
 //AbstractButtonPropertyRedirects.h by Kostya Kozachuck as neurocod - 16.09.2011 1:16:37
+//BSD license https://github.com/neurocod/Qqt
 #pragma once
 
 class AbstractButtonPropertyRedirects: public WidgetPropertyRedirects {

@@ -1,4 +1,5 @@
 //FileFacility.cpp by Kostya Kozachuck as neurocod - 03.07.2010 13:34:47
+//BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "FileFacility.h"
 #include "DirString.h"

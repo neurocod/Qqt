@@ -1,4 +1,5 @@
 //TopResult.h by Kostya Kozachuck as neurocod - 29.09.2011 3:03:53
+//BSD license https://github.com/neurocod/Qqt
 #pragma once
 
 template<class Key, class Value>

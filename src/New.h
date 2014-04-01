@@ -1,4 +1,5 @@
 //New.h by Kostya Kozachuck as neurocod - 27.09.2011 16:01:22
+//BSD license https://github.com/neurocod/Qqt
 #pragma once
 
 template<class Class>

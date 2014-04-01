@@ -1,4 +1,5 @@
 //Layout.cpp by Kostya Kozachuck as neurocod - 11.03.2012 21:04:56
+//BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "Layout.h"
 

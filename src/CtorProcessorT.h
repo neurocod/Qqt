@@ -1,4 +1,5 @@
 //CtorProcessorT.h by Kostya Kozachuck as neurocod - 10.03.2012 20:05:49
+//BSD license https://github.com/neurocod/Qqt
 #pragma once
 
 template<class T>

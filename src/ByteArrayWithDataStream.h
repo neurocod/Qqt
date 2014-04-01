@@ -1,4 +1,5 @@
 //ByteArrayWithDataStream.h by Kostya Kozachuck as neurocod - 01.06.2012 21:12:00
+//BSD license https://github.com/neurocod/Qqt
 #pragma once
 
 class ByteArrayWithDataStream {

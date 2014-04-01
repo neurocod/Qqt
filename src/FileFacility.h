@@ -1,4 +1,5 @@
 //FileFacility.h by Kostya Kozachuck as neurocod - 03.07.2010 13:34:46
+//BSD license https://github.com/neurocod/Qqt
 #pragma once
 #include "DirString.h"
 #include "FileReader.h"

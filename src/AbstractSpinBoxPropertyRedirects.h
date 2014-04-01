@@ -1,4 +1,5 @@
 //AbstractSpinBoxPropertyRedirects.h by Kostya Kozachuck as neurocod - 11.03.2012 20:19:10
+//BSD license https://github.com/neurocod/Qqt
 #pragma once
 
 class AbstractSpinBoxPropertyRedirects: public WidgetPropertyRedirects {

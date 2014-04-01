@@ -1,4 +1,5 @@
 //Label.cpp by Kostya Kozachuck as neurocod - 29.02.2012 1:30:10
+//BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "Label.h"
 

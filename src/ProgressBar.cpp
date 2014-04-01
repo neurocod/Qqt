@@ -1,4 +1,5 @@
 //ProgressBar.cpp by Kostya Kozachuck as neurocod - 08.05.2012 14:21:12
+//BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "ProgressBar.h"
 

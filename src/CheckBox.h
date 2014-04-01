@@ -1,4 +1,5 @@
 //CheckBox.h by Kostya Kozachuck as neurocod - 16.09.2011 1:08:43
+//BSD license https://github.com/neurocod/Qqt
 #pragma once
 
 class CheckBox: public AbstractButtonPropertyRedirects {

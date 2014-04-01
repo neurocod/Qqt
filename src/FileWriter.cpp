@@ -1,4 +1,5 @@
 //FileWriter.cpp by Kostya Kozachuck as neurocod - 22.10.2011 18:07:19
+//BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "FileWriter.h"
 

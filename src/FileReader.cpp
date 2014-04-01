@@ -1,4 +1,5 @@
 //FileReader.cpp by Kostya Kozachuck as neurocod - 21.10.2011 12:26:29
+//BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "FileReader.h"
 

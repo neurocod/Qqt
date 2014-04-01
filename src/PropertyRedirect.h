@@ -1,4 +1,5 @@
 //PropertyRedirect.h by Kostya Kozachuck as neurocod - 28.08.2011 0:04:12
+//BSD license https://github.com/neurocod/Qqt
 #pragma once
 
 template<

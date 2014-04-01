@@ -1,4 +1,5 @@
 //Splitter.cpp by Kostya Kozachuck as neurocod - 16.09.2011 18:59:11
+//BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "Splitter.h"
 

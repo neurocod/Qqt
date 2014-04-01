@@ -1,4 +1,5 @@
 //RotatableToolBar.h by Kostya Kozachuck as neurocod - 21.11.2011 10:31:44
+//BSD license https://github.com/neurocod/Qqt
 #pragma once
 
 class RotatableToolBar: public QToolBar {

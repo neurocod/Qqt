@@ -1,4 +1,5 @@
 //MsgBox.h by Kostya Kozachuck as neurocod - 23.12.2011 6:34:32
+//BSD license https://github.com/neurocod/Qqt
 #pragma once
 
 class MsgBox: public QMessageBox {

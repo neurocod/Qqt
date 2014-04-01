@@ -1,4 +1,5 @@
 //Settings.cpp by Kostya Kozachuck as neurocod - 03.12.2010 4:16:05
+//BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "Settings.h"
 

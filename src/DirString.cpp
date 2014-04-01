@@ -1,4 +1,5 @@
 //DirString.cpp by Kostya Kozachuck as neurocod - 12.08.2011 18:28:31
+//BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "DirString.h"
 

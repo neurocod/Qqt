@@ -1,4 +1,5 @@
 //WidgetPropertyRedirects.h by Kostya Kozachuck as neurocod - 16.09.2011 2:05:57
+//BSD license https://github.com/neurocod/Qqt
 #pragma once
 
 class WidgetPropertyRedirects: public ObjectPropertyRedirects {

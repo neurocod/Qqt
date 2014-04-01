@@ -1,4 +1,5 @@
 //Action.cpp by Kostya Kozachuck as neurocod - 11.11.2011 22:08:23
+//BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "Action.h"
 

@@ -1,4 +1,5 @@
 //BoxLayout.cpp by Kostya Kozachuck as neurocod - 19.07.2011 9:47:17
+//BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "BoxLayout.h"
 
