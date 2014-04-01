@@ -3,39 +3,40 @@ Qqt = Quick Qt - syntactic sugar for Qt.
 Write Qt code like html. Examples to compare Qt and Qqt:
 
 	//Qt:
-	QVBoxLayout* layout = new QVBoxLayout();
-	window->setLayout(layout);
+	QVBoxLayout* lay1 = new QVBoxLayout();
+	window->setLayout(lay1);
 	
 	//Qqt analogue:
-	VBoxLayout lay(window);
+	VBoxLayout lay2(window);
 
-	layout->addWidget(w);//Qt
-	layout << w;//Qqt
+	lay1->addWidget(w);//Qt
+	lay2 << w;//Qqt
 
-	layout->addChildLayout(lay2);//Qt
-	layout << lay2;//Qqt
+	lay1->addChildLayout(lay3);//Qt
+	lay2 << lay3;//Qqt
 
-	layout->addWidget(new QLabel(tr("Text")));
-	layout << tr("Text");
+	lay1->addWidget(new QLabel(tr("Text")));
+	lay2 << tr("Text");
 
 	QPushButton*btn = new QPushButton();
 	btn->setIcon(QIcon());
 	btn->setText(QString());
+	btn->set...(...)
 	//Qqt:
-	PushButton btn(QIcon(), QString());
+	PushButton btn(QIcon(), QString(), ...);
 	//or
-	PushButton btn(QString(), QIcon());//parameters in any order
+	PushButton btn(QString(), QIcon(), ...);//parameters in any order
 
 Constructors of buttons, actions and other classes are templates, and can take several arguments, from 0 to more, where:
 
-* first QString, if specified, is for setText()
-* second QString, if specified, is for setToolTip()
+* first QString parameter, if specified, is for setText()
+* second QString parameter, if specified, is for setToolTip()
 * QIcon, if specified, is for setIcon()
-* QKeySequence for setShortcut()
-* Qt::ShortcutContext for setShortcutContext()
+* QKeySequence is for setShortcut()
+* Qt::ShortcutContext is for setShortcutContext()
 * etc
 
-create QAction like this:
+Using this approach create QAction like this:
 
 	Action act(tr("Text"));
 	//parameters in any order:
@@ -79,6 +80,7 @@ How to include
 --------------
 There are few ways:
 
-1) copy all sources: create dir Qqt inside your project, place there all files from Qqt/src folder, include Qqt/includeMe.h in your precmpiled header file
+1) copy all sources: mkdir Qqt inside your project, place there all the files from Qqt/src folder, include Qqt/includeMe.h in your precompiled header file
 
-2) make traditional library, and commit it here so others can use it :) currently I use non-git version control system for my Qqt copy
+2) make traditional library, and commit it here so others can use it :)
+Project is updated rarely on git cause currently I use non-git version control system for my Qqt copy.
