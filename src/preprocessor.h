@@ -130,17 +130,6 @@ void assertWithFunc(const char *assertion, const char *file, const char *func, i
 #  endif
 #endif
 
-#define DECLARE_SINGLETON(classname) protected: static classname* s_instance;\
-	public: static classname* instance();
-
-#define IMPLEMENT_SINGLETON(classname) classname* classname::s_instance = 0;\
-classname* classname::instance() {\
-	if(!s_instance) {\
-		s_instance = new classname();\
-	}\
-	return s_instance;\
-}
-
 /*INDEX_OF_EXPR usage example:
 	QList<int> intList; intList << 1 << 5;
 	int index = INDEX_OF_EXPR(intList, num, num>4);
