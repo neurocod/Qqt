@@ -34,7 +34,6 @@ class Action {
 		PROPERTY_REDIRECTV(QAction, QAction::MenuRole, menuRole, menuRole, setMenuRole);
 		PROPERTY_REDIRECTV(QAction, QAction::Priority, priority, priority, setPriority);
 		PROPERTY_REDIRECTV(QAction, Qt::ShortcutContext, shortcutContext, shortcutContext, setShortcutContext);
-		PROPERTY_REDIRECTV(QAction, QAction::SoftKeyRole, softKeyRole, softKeyRole, setSoftKeyRole);
 		PROPERTY_REDIRECT (QAction, QKeySequence, shortcut, shortcut, setShortcut);
 		PROPERTY_REDIRECT (QAction, QFont, font, font, setFont);
 		PROPERTY_REDIRECT (QAction, QIcon, icon, icon, setIcon);

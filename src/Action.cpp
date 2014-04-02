@@ -29,7 +29,6 @@ void Action::init(QAction*_d) {
 	menuRole.init(d);
 	priority.init(d);
 	shortcutContext.init(d);
-	softKeyRole.init(d);
 	shortcut.init(d);
 	font.init(d);
 	icon.init(d);
