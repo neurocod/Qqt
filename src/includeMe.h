@@ -6,6 +6,7 @@
 #include "includeMore.h"
 
 #include "ToString.h"
+#include "FileFacility.h"
 #include "FileReader.h"
 #include "FileWriter.h"
 #include "Settings.h"
