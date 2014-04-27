@@ -8,4 +8,7 @@ void ToolButton::init() {
 	AbstractButtonPropertyRedirects::init(d);
 	defaultAction.init(d);
 	toolButtonStyle.init(d);
+	arrowType.init(d);
+	autoRaise.init(d);
+	popupMode.init(d);
 }

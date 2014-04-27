@@ -38,8 +38,12 @@ class ToolButton: public AbstractButtonPropertyRedirects {
 			p.process(*this, t4);
 		}
 		virtual ~ToolButton() {}
-		PROPERTY_REDIRECTV(QToolButton, Qt::ToolButtonStyle, toolButtonStyle, toolButtonStyle, setToolButtonStyle);
+		
 		PROPERTY_REDIRECTV(QToolButton, QAction*, defaultAction, defaultAction, setDefaultAction);
+		PROPERTY_REDIRECTV(QToolButton, Qt::ArrowType, arrowType, arrowType, setArrowType);
+		PROPERTY_REDIRECTV(QToolButton, bool, autoRaise, autoRaise, setAutoRaise);
+		PROPERTY_REDIRECTV(QToolButton, QToolButton::ToolButtonPopupMode, popupMode, popupMode, setPopupMode);
+		PROPERTY_REDIRECTV(QToolButton, Qt::ToolButtonStyle, toolButtonStyle, toolButtonStyle, setToolButtonStyle);
 
 		EMBED_QPOINTER_AND_CAST(QToolButton)
 	protected:
