@@ -1,4 +1,4 @@
-//ToString.cpp by Kostya Kozachuck as neurocod - 03.12.2012 21:22:07
+//ToString.cpp by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "ToString.h"

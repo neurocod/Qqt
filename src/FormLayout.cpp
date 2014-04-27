@@ -1,4 +1,4 @@
-//FormLayout.cpp by Kostya Kozachuck as neurocod - 28.06.2012 21:59:11
+//FormLayout.cpp by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "FormLayout.h"

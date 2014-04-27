@@ -1,4 +1,4 @@
-//AbstractSpinBoxPropertyRedirects.cpp by Kostya Kozachuck as neurocod - 11.03.2012 20:19:11
+//AbstractSpinBoxPropertyRedirects.cpp by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "AbstractSpinBoxPropertyRedirects.h"

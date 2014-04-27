@@ -1,4 +1,4 @@
-//Settings.h by Kostya Kozachuck as neurocod - 03.12.2010 4:16:04
+//Settings.h by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #pragma once
 

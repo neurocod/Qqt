@@ -1,4 +1,4 @@
-//AbstractButtonPropertyRedirects.h by Kostya Kozachuck as neurocod - 16.09.2011 1:16:37
+//AbstractButtonPropertyRedirects.h by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #pragma once
 

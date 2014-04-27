@@ -1,4 +1,4 @@
-﻿//preprocessor.h by Kostya Kozachuck as neurocod - 27.11.2007 21:31:17
+﻿//preprocessor.h by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #pragma once
 

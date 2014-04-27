@@ -1,4 +1,4 @@
-//FileFacility.cpp by Kostya Kozachuck as neurocod - 03.07.2010 13:34:47
+//FileFacility.cpp by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "FileFacility.h"

@@ -1,4 +1,4 @@
-//PushButton.h by Kostya Kozachuck as neurocod - 27.08.2011 21:20:17
+//PushButton.h by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #pragma once
 

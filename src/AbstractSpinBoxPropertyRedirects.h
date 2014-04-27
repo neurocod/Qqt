@@ -1,4 +1,4 @@
-//AbstractSpinBoxPropertyRedirects.h by Kostya Kozachuck as neurocod - 11.03.2012 20:19:10
+//AbstractSpinBoxPropertyRedirects.h by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #pragma once
 

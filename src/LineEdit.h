@@ -1,4 +1,4 @@
-//LineEdit.h by Kostya Kozachuck as neurocod - 11.03.2012 10:53:18
+//LineEdit.h by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #pragma once
 

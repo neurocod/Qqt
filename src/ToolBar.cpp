@@ -1,4 +1,4 @@
-//ToolBar.cpp by Kostya Kozachuck as neurocod - 08.11.2011 1:25:55
+//ToolBar.cpp by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "ToolBar.h"

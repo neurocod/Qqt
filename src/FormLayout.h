@@ -1,4 +1,4 @@
-//FormLayout.h by Kostya Kozachuck as neurocod - 28.06.2012 21:59:10
+//FormLayout.h by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #pragma once
 #include "Layout.h"

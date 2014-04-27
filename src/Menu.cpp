@@ -1,4 +1,4 @@
-//Menu.cpp by Kostya Kozachuck as neurocod - 16.09.2011 2:01:02
+//Menu.cpp by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "Menu.h"

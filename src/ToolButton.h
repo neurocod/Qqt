@@ -1,4 +1,4 @@
-//ToolButton.h by Kostya Kozachuck as neurocod - 28.08.2011 0:27:58
+//ToolButton.h by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #pragma once
 

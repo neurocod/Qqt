@@ -1,4 +1,4 @@
-//ToString.h by Kostya Kozachuck as neurocod - 03.12.2012 21:22:06
+//ToString.h by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #pragma once
 

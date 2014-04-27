@@ -1,4 +1,4 @@
-//Widget.h by Kostya Kozachuck as neurocod - 16.09.2011 18:53:44
+//Widget.h by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #pragma once
 

@@ -1,4 +1,4 @@
-//Action.h by Kostya Kozachuck as neurocod - 11.11.2011 22:08:22
+//Action.h by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #pragma once
 

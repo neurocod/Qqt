@@ -1,4 +1,4 @@
-//HBoxLayout.h by Kostya Kozachuck as neurocod - 19.07.2011 9:46:49
+//HBoxLayout.h by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #pragma once
 #include "BoxLayout.h"

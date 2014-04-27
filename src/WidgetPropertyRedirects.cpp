@@ -1,4 +1,4 @@
-//WidgetPropertyRedirects.cpp by Kostya Kozachuck as neurocod - 16.09.2011 2:05:58
+//WidgetPropertyRedirects.cpp by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "WidgetPropertyRedirects.h"

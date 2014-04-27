@@ -1,4 +1,4 @@
-//TabWidget.cpp by Kostya Kozachuck as neurocod - 08.12.2012 13:28:55
+//TabWidget.cpp by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "TabWidget.h"

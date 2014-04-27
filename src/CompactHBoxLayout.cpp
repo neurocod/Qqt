@@ -1,4 +1,4 @@
-//CompactHBoxLayout.cpp by Kostya Kozachuck as neurocod - 19.07.2011 9:47:10
+//CompactHBoxLayout.cpp by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "CompactHBoxLayout.h"

@@ -1,4 +1,4 @@
-//ButtonGroup.h by Kostya Kozachuck as neurocod - 11.03.2012 6:41:26
+//ButtonGroup.h by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #pragma once
 

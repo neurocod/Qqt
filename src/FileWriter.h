@@ -1,4 +1,4 @@
-//FileWriter.h by Kostya Kozachuck as neurocod - 22.10.2011 18:07:18
+//FileWriter.h by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #pragma once
 

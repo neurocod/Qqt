@@ -1,4 +1,4 @@
-//DirString.h by Kostya Kozachuck as neurocod - 12.08.2011 18:28:30
+//DirString.h by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #pragma once
 

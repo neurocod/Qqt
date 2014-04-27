@@ -1,4 +1,4 @@
-//ComboBox.cpp by Kostya Kozachuck as neurocod - 11.03.2012 7:19:02
+//ComboBox.cpp by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "ComboBox.h"

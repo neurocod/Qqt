@@ -1,4 +1,4 @@
-//TopResult.h by Kostya Kozachuck as neurocod - 29.09.2011 3:03:53
+//TopResult.h by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #pragma once
 

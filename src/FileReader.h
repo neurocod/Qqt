@@ -1,4 +1,4 @@
-//FileReader.h by Kostya Kozachuck as neurocod - 21.10.2011 12:26:28
+//FileReader.h by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #pragma once
 

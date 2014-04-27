@@ -1,4 +1,4 @@
-//SignalEmitter.h by Kostya Kozachuck as neurocod - 18.03.2009 1:15:19
+//SignalEmitter.h by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #pragma once
 #include <QObject>

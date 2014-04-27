@@ -1,4 +1,4 @@
-//NLStyle.cpp by Kostya Kozachuck as neurocod - 01.10.2009 21:31:32
+//NLStyle.cpp by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "NLStyle.h"

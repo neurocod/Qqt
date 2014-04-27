@@ -1,4 +1,4 @@
-//ProgressBar.h by Kostya Kozachuck as neurocod - 08.05.2012 14:21:12
+//ProgressBar.h by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #pragma once
 

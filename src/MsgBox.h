@@ -1,4 +1,4 @@
-//MsgBox.h by Kostya Kozachuck as neurocod - 23.12.2011 6:34:32
+//MsgBox.h by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #pragma once
 

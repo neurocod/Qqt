@@ -1,4 +1,4 @@
-//PushButton.cpp by Kostya Kozachuck as neurocod - 27.08.2011 21:20:17
+//PushButton.cpp by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "PushButton.h"
