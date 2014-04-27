@@ -3,7 +3,7 @@
 #include "ByteArrayWithDataStream.h"
 #include "TopResult.h"
 #include "PropertyRedirect.h"
-#include "NLStyle.h"
+#include "includeMore.h"
 
 #include "ToString.h"
 #include "FileReader.h"
