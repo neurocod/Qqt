@@ -13,6 +13,7 @@
 #include "ToolButton.h"
 #include "CheckBox.h"
 #include "Menu.h"
+#include "MenuButton.h"
 #include "Splitter.h"
 #include "Widget.h"
 #include "ToolBar.h"
