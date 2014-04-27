@@ -5,9 +5,18 @@
 
 void AbstractButtonPropertyRedirects::init(QAbstractButton*d) {
 	WidgetPropertyRedirects::init(d);
-	text.init(d);
-	icon.init(d);
+
+	autoExclusive.init(d);
+	autoRepeat.init(d);
+	autoRepeatDelay.init(d);
+	autoRepeatInterval.init(d);
+	checkable.init(d);
 	checked.init(d);
+	down.init(d);
+	icon.init(d);
+	iconSize.init(d);
+	shortcut.init(d);
+	text.init(d);
 }
 void AbstractButtonPropertyRedirects::connectClicks(QObject*obj, const char* slot, Qt::ConnectionType type) {
 	QObject::connect(icon.destination(), SIGNAL(clicked(bool)), obj, slot, type);
