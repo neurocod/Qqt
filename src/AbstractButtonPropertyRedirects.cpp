@@ -27,3 +27,14 @@ void AbstractButtonPropertyRedirects::set(const QIcon & i) {
 /*void AbstractButtonPropertyRedirects::setTooltipByShortcut() {
 	tooltip = QObject::tr("Shortcut: %1").arg();
 }*/
+void AbstractButtonPropertyRedirects::addShortcutToTooltip() {
+	QKeySequence keySeq = shortcut;
+	QString key = keySeq.toString();
+	if(key.isEmpty())
+		return;
+	QString str = toolTip;
+	if(!str.isEmpty())
+		str += '\n';
+	str += key;
+	toolTip = str;
+}

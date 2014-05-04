@@ -11,7 +11,7 @@ class AbstractButtonPropertyRedirects: public WidgetPropertyRedirects {
 			QAbstractButton* btn = icon.destination();
 			QObject::connect(btn, &QAbstractButton::clicked, receiver, slot, type);
 		}
-
+		void addShortcutToTooltip();
 		PROPERTY_REDIRECTV(QAbstractButton, bool, autoExclusive, autoExclusive, setAutoExclusive);
 		PROPERTY_REDIRECTV(QAbstractButton, bool, autoRepeat, autoRepeat, setAutoRepeat)
 		PROPERTY_REDIRECTV(QAbstractButton, int, autoRepeatDelay, autoRepeatDelay, setAutoRepeatDelay);
