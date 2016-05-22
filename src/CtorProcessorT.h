@@ -35,6 +35,9 @@ class CtorProcessorT {
 		void process(T&d, const QKeySequence & c) {
 			d->setShortcut(c);
 		}
+		void process(T&d, const QList<QKeySequence> & shortcuts) {
+			d->setShortcuts(shortcuts);
+		}
 		void process(T&d, const QString & str) {
 			switch(m_nStr) {
 			case 0:
