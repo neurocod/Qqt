@@ -1,49 +1,57 @@
-//TopResult.h by Kostya Kozachuck as neurocod
-//BSD license https://github.com/neurocod/Qqt
+﻿//TopResult.h by Kostya Kozachuck as neurocod - 29.09.2011 3:03:53
 #pragma once
 
 template<class Key, class Value>
 class TopResult {
 	protected:
-		Key m_key;
-		Value m_value;
-		bool m_bInitialized;
+		Key _key;
+		Value _value;
+		bool _isSet = false;
 	public:
-		TopResult() { m_bInitialized = false; }
-		TopResult(const Key key, const Value value):
-				m_key(key), m_value(value), m_bInitialized(true) {
+		TopResult() {}
+		TopResult(const Key & key, const Value & value):
+				_key(key), _value(value), _isSet(true) {
 		}
-		Key key()const { return m_key; }
-		void setKey(Key key) { m_key = key; }
-		Value value()const { return m_value; }
-		void setValue(Value value) { m_value = value; }
-		void addMaxKey(const Key key, const Value value) {
-			if(!m_bInitialized || key>m_key) {
-				m_bInitialized = true;
-				m_key = key;
-				m_value = value;
+		bool isSet()const { return _isSet; }
+		Key key()const { return _key; }
+		void setKey(const Key & key) { _key = key; }
+		Value value()const { return _value; }
+		void setValue(const Value & value) { _value = value; }
+		bool addMaxKey(const Key & key, const Value & value) {
+			if(!_isSet || key>_key) {
+				_isSet = true;
+				_key = key;
+				_value = value;
+				return true;
 			}
+			return false;
 		}
-		void addMinKey(const Key key, const Value value) {
-			if(!m_bInitialized || key<m_key) {
-				m_bInitialized = true;
-				m_key = key;
-				m_value = value;
+		bool addMinKey(const Key & key, const Value & value) {
+			if(!_isSet || key<_key) {
+				_isSet = true;
+				_key = key;
+				_value = value;
+				return true;
 			}
+			return false;
 		}
-		void addMaxValue(const Key key, const Value value) {
-			if(!m_bInitialized || value>m_value) {
-				m_bInitialized = true;
-				m_key = key;
-				m_value = value;
+		bool addMaxValue(const Key & key, const Value & value) {
+			if(!_isSet || value>_value) {
+				_isSet = true;
+				_key = key;
+				_value = value;
+				return true;
 			}
+			return false;
 		}
-		void addMinValue(const Key key, const Value value) {
-			if(!m_bInitialized || value<m_value) {
-				m_bInitialized = true;
-				m_key = key;
-				m_value = value;
+		bool addMinValue(const Key & key, const Value & value) {
+			if(!_isSet || value<_value) {
+				_isSet = true;
+				_key = key;
+				_value = value;
+				return true;
 			}
+			return false;
 		}
 		template<class T>
 		void addMaxKeyByMap(const T & map) {
