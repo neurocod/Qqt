@@ -8,7 +8,7 @@ bool FileReader::readAscii(IN const QString & fileName, OUT QString & strFileDat
 	QByteArray arr;
 	if(!read(fileName, arr))
 		return false;
-	strFileData = QString::fromAscii(arr.data(), arr.size());
+	strFileData = QString::fromLatin1(arr.data(), arr.size());
 	return true;
 }
 bool FileReader::read(IN const QString & fileName, OUT QByteArray & arrFileData) {
