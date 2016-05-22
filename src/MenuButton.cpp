@@ -4,12 +4,12 @@
 #include "MenuButton.h"
 
 MenuButton& MenuButton::operator<<(QAction*act) {
-	m_menu << act;
-	if(m_bFirst) {
-		m_bFirst = false;
-		m_btn.icon = act->icon();
-		m_btn.toolTip = act->toolTip();
-		QObject::connect(m_btn, SIGNAL(clicked(bool)), act, SLOT(trigger()));
+	_menu << act;
+	if(_first) {
+		_first = false;
+		_btn.icon = act->icon();
+		_btn.toolTip = act->toolTip();
+		QObject::connect(_btn, SIGNAL(clicked(bool)), act, SLOT(trigger()));
 	}
 	return *this;
 }
