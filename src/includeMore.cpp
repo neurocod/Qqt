@@ -1,7 +1,7 @@
-//NLStyle.cpp by Kostya Kozachuck as neurocod
+//includeMore.cpp by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
-#include "NLStyle.h"
+#include "includeMore.h"
 
 LPCSTR NLStyle::s_strDateTimeFormatFull = "yyyy.MM.dd hh:mm:ss.zzz";
 

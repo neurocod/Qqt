@@ -12,9 +12,9 @@ Menu::Menu(QMenu*other) {
 Menu::Menu(QWidget*parent) {
 	init(parent, 0);
 }
-Menu::Menu(QString _title, QWidget*parent) {
+Menu::Menu(const QString & title_, QWidget*parent) {
 	init(parent, 0);
-	title = _title;
+	title = title_;
 }
 void Menu::showUnder(QWidget*w) {
 	QPoint pt = w->mapToGlobal(w->rect().bottomLeft());

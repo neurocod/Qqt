@@ -7,7 +7,7 @@ class Menu: public WidgetPropertyRedirects {
 		Menu();
 		Menu(QMenu*other);
 		Menu(QWidget*parent);
-		Menu(QString title, QWidget*parent=0);
+		Menu(const QString & title_, QWidget*parent = 0);
 		virtual ~Menu() {}
 		void showUnder(QWidget*w);
 		Menu& operator<<(QAction*act);

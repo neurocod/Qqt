@@ -1,4 +1,4 @@
-//NLStyle.h by Kostya Kozachuck as neurocod
+//includeMore.h by Kostya Kozachuck as neurocod
 //BSD license https://github.com/neurocod/Qqt
 #pragma once
 #include "CtorProcessorT.h"
@@ -8,6 +8,7 @@
 #include "CompactVBoxLayout.h"
 #include "WidgetPropertyRedirects.h"
 #include "MsgBox.h"
+#include "DialogButtonBox.h"
 #include "AbstractButtonPropertyRedirects.h"
 #include "PushButton.h"
 #include "ToolButton.h"
