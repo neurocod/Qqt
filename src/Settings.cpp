@@ -1,5 +1,4 @@
-//Settings.cpp by Kostya Kozachuck as neurocod
-//BSD license https://github.com/neurocod/Qqt
+﻿//Settings.cpp by Kostya Kozachuck as neurocod - 03.12.2010 4:16:05
 #include "pch.h"
 #include "Settings.h"
 
@@ -67,6 +66,15 @@ void Settings::updateCheckState(bool bSave, const QString & key, IN OUT QCheckBo
 			box->setChecked(value(key).toBool());
 	}
 }
+void Settings::updateCheckState(bool bSave, const QString & key, IN OUT QGroupBox*box) {
+	ASSERT(box);
+	if(bSave) {
+		setValue(key, box->isChecked());
+	} else {
+		if(contains(key))
+			box->setChecked(value(key).toBool());
+	}
+}
 void Settings::beginGroup(QObject*p) {
 	ASSERT(p);
 	if(!p)
@@ -84,12 +92,20 @@ void Settings::endGroup(QObject*p) {
 	endGroup();
 }
 void Settings::beginGroups(const QStringList & li) {
-	foreach(QString str, li)
+	for(auto str: li)
 		beginGroup(str);
 }
 void Settings::endGroups(const QStringList & li) {
-	foreach(QString str, li)
+	for(auto str: li)
 		endGroup();
+}
+void Settings::copyFrom(const QString & organization, const QString & application) {
+	QSettings sett(organization, application);
+	auto li = sett.allKeys();
+	for(auto strKey: li) {
+		auto v = sett.value(strKey);
+		save(strKey, v);
+	}
 }
 //static
 QVariant Settings::singleValue(const QString & name, const QVariant & defaultValue) {
@@ -104,11 +120,12 @@ QString FileDialogLastDir::get(const QString & key) {
 	}
 	return dir;
 }
-void FileDialogLastDir::set(QString str, const QString & key) {
-	QFileInfo info(str);
+void FileDialogLastDir::set(const QString & key, const QString & _file) {
+	QString file = _file;
+	QFileInfo info(file);
 	if(info.isFile())
-		str = info.path();
-	dir = str;
+		file = info.dir().absolutePath();
+	dir = file;
 	Settings sett;
 	sett.save("FileDialogLastDir"+key, dir);
 }
