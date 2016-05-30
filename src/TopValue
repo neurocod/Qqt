@@ -1,0 +1,38 @@
+#pragma once
+
+template<class T, bool searchMinimum>
+class TopValue {
+	protected:
+		T _t;
+		bool _initialized = false;
+	public:
+		operator T()const {
+			ASSERT(_initialized);
+			return _t;
+		}
+		void add(T t) {
+			if(!_initialized) {
+				_initialized = true;
+				_t = t;
+				return;
+			}
+			if(searchMinimum) {
+				if(t<_t)
+					_t = t;
+				return;
+			}
+			if(t>_t)
+				_t = t;
+		}
+
+		TopValue& operator<<(T t) {
+			add(t);
+			return *this;
+		}
+};
+template<class T>
+class MinValue: public TopValue<T, true> {
+};
+template<class T>
+class MaxValue: public TopValue<T, false> {
+};
