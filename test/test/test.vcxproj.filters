@@ -122,9 +122,6 @@
     <ClCompile Include="..\..\src\MsgBox.cpp">
       <Filter>Qqt</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\NLStyle.cpp">
-      <Filter>Qqt</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\Object.cpp">
       <Filter>Qqt</Filter>
     </ClCompile>
@@ -280,9 +277,6 @@
       <Filter>Qqt</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\New.h">
-      <Filter>Qqt</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\NLStyle.h">
       <Filter>Qqt</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\Object.h">

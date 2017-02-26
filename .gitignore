@@ -9,6 +9,8 @@
 *.so
 *.dll
 *.dylib
+*.VC.db
+*.VC.opendb
 
 # Qt-es
 
