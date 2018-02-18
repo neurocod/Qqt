@@ -2,12 +2,8 @@ Qqt = Quick Qt - syntactic sugar for Qt.
 ----------------------------------------
 Write Qt code like html. Examples to compare Qt and Qqt:
 
-	//Qt:
-	QVBoxLayout* lay1 = new QVBoxLayout();
-	window->setLayout(lay1);
-	
-	//Qqt analogue:
-	VBoxLayout lay2(window);
+	QVBoxLayout* lay1 = new QVBoxLayout(widget);//Qt
+	VBoxLayout lay2(widget);//Qqt
 
 	lay1->addWidget(w);//Qt
 	lay2 << w;//Qqt
@@ -15,8 +11,8 @@ Write Qt code like html. Examples to compare Qt and Qqt:
 	lay1->addChildLayout(lay3);//Qt
 	lay2 << lay3;//Qqt
 
-	lay1->addWidget(new QLabel(tr("Text")));
-	lay2 << tr("Text");
+	lay1->addWidget(new QLabel(tr("Text")));//Qt
+	lay2 << tr("Text");//Qqt
 
 	QPushButton*btn = new QPushButton();
 	btn->setIcon(QIcon());
@@ -36,13 +32,14 @@ Constructors of buttons, actions and other classes are templates, and can take s
 * Qt::ShortcutContext is for setShortcutContext()
 * etc
 
-Using this approach create QAction like this:
+Using this approach, create QAction like this:
 
 	Action act(tr("Text"));
 	//parameters in any order:
 	Action act(tr("Text"), QIcon(":/iconPath"), tr("tooltip"), QKeySequence("Ctrl+f"));
 	Action act(QIcon(":/iconPath"), tr("Text"), tr("tooltip"), QKeySequence("Ctrl+f"));
 	Action act(QIcon(":/onlyIcon"));
+	
 	//buttons use the same approach
 	ToolButton btn(QIcon(), QKeySequence("..."));
 
