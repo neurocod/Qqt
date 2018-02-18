@@ -1,28 +1,28 @@
 Qqt = Quick Qt - syntactic sugar for Qt.
 ----------------------------------------
 Write Qt code like html. Examples to compare Qt and Qqt:
+```C++
+QVBoxLayout* lay1 = new QVBoxLayout(widget);//Qt
+VBoxLayout lay2(widget);//Qqt
 
-	QVBoxLayout* lay1 = new QVBoxLayout(widget);//Qt
-	VBoxLayout lay2(widget);//Qqt
+lay1->addWidget(w);//Qt
+lay2 << w;//Qqt
 
-	lay1->addWidget(w);//Qt
-	lay2 << w;//Qqt
+lay1->addChildLayout(lay3);//Qt
+lay2 << lay3;//Qqt
 
-	lay1->addChildLayout(lay3);//Qt
-	lay2 << lay3;//Qqt
+lay1->addWidget(new QLabel(tr("Text")));//Qt
+lay2 << tr("Text");//Qqt
 
-	lay1->addWidget(new QLabel(tr("Text")));//Qt
-	lay2 << tr("Text");//Qqt
-
-	QPushButton*btn = new QPushButton();
-	btn->setIcon(QIcon());
-	btn->setText(QString());
-	btn->set...(...)
-	//Qqt:
-	PushButton btn(QIcon(), QString(), ...);
-	//or
-	PushButton btn(QString(), QIcon(), ...);//parameters in any order
-
+QPushButton*btn = new QPushButton();
+btn->setIcon(QIcon());
+btn->setText(QString());
+btn->set...(...)
+//Qqt:
+PushButton btn(QIcon(), QString(), ...);
+//or
+PushButton btn(QString(), QIcon(), ...);//parameters in any order
+```
 Constructors of buttons, actions and other classes are templates, and can take several arguments, from 0 to more, where:
 
 * first QString parameter, if specified, is for setText()
@@ -33,43 +33,43 @@ Constructors of buttons, actions and other classes are templates, and can take s
 * etc
 
 Using this approach, create QAction like this:
+```C++
+Action act(tr("Text"));
+//parameters in any order:
+Action act(tr("Text"), QIcon(":/iconPath"), tr("tooltip"), QKeySequence("Ctrl+f"));
+Action act(QIcon(":/iconPath"), tr("Text"), tr("tooltip"), QKeySequence("Ctrl+f"));
+Action act(QIcon(":/onlyIcon"));
 
-	Action act(tr("Text"));
-	//parameters in any order:
-	Action act(tr("Text"), QIcon(":/iconPath"), tr("tooltip"), QKeySequence("Ctrl+f"));
-	Action act(QIcon(":/iconPath"), tr("Text"), tr("tooltip"), QKeySequence("Ctrl+f"));
-	Action act(QIcon(":/onlyIcon"));
-	
-	//buttons use the same approach
-	ToolButton btn(QIcon(), QKeySequence("..."));
-
+//buttons use the same approach
+ToolButton btn(QIcon(), QKeySequence("..."));
+```
 Use properties instead of set* functions:
+```C++
+Action act;
+act.tooltip = "";
+act.shortcut = QKeySequence("Ctrl+F");
 
-	Action act;
-	act.tooltip = "";
-	act.shortcut = QKeySequence("Ctrl+F");
-
-	msgBox("Visual Basic style!");
-
+msgBox("Visual Basic style!");
+```
 More complex examples, how to place several widgets like html:
-
-	Widget w;
-	VBoxLayout lay(w);
+```C++
+Widget w;
+VBoxLayout lay(w);
 	
-	lay << tr("See toolbar below:");
-	{
-		HBoxLayout lay2(lay);
-		
-		Action act0(tr("First action"));
-		connect(act0, SIGNAL(triggered()), w, SLOT(a0()));
-		lay2 << act0;
+lay << tr("See toolbar below:");
+{
+	HBoxLayout lay2(lay);
+	
+	Action act0(tr("First action"));
+	connect(act0, SIGNAL(triggered()), w, SLOT(a0()));
+	lay2 << act0;
 
-		Action act1(tr("Second action"));
-		connect(act1, SIGNAL(triggered()), w, SLOT(a1()));
-		lay2 << act1;
-	}
-	lay << new QTextEdit();
-
+	Action act1(tr("Second action"));
+	connect(act1, SIGNAL(triggered()), w, SLOT(a1()));
+	lay2 << act1;
+}
+lay << new QTextEdit();
+```
 License
 -------
 BSD-like
