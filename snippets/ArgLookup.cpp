@@ -26,7 +26,5 @@ int main(int argc, char *argv[]) {
 		f.write(str);
 	}
 	qDebug() << "ok";
-	QTextStream qtin(stdin);
-	QString line = qtin.readLine();
 	return 0;
 }
