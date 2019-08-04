@@ -23,10 +23,10 @@ PushButton btn(QIcon(), QString(), ...);
 //or
 PushButton btn(QString(), QIcon(), ...);//parameters in any order
 ```
-Constructors of buttons, actions and other classes are templates, and can take several arguments, from 0 to more, where:
+Constructors of buttons, actions and other classes are templates, and can take several arguments in any order, from 0 to more, where:
 
-* first QString parameter, if specified, is for setText()
-* second QString parameter, if specified, is for setToolTip()
+* QString parameter, if specified in any position, is for setText()
+* another QString parameter, if specified, is for setToolTip()
 * QIcon, if specified, is for setIcon()
 * QKeySequence is for setShortcut()
 * Qt::ShortcutContext is for setShortcutContext()
