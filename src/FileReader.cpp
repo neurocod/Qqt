@@ -1,63 +1,65 @@
-//FileReader.cpp by Kostya Kozachuck as neurocod
+//FileReader.cpp by Kostya Kozachuck as neurocod - 21.10.2011 12:26:29
 //BSD license https://github.com/neurocod/Qqt
 #include "pch.h"
 #include "FileReader.h"
 
-//TODO: += FileReader::read(QString codec, ...)
-bool FileReader::readAscii(IN const QString & fileName, OUT QString & strFileData) {
-	QByteArray arr;
-	if(!read(fileName, arr))
-		return false;
-	strFileData = QString::fromLatin1(arr.data(), arr.size());
-	return true;
+//TODO: += FileReader::read(const QString & codec, ...)
+ReadStatusV<QString> FileReader::readAscii(const QString & fileName) {
+	auto ret = read(fileName);
+	if(!ret.ok())
+		return ret;
+	return {true, ret._v};
 }
-bool FileReader::read(IN const QString & fileName, OUT QByteArray & arrFileData) {
-	arrFileData.clear();
+ReadStatusT<QByteArray> FileReader::read(const QString & fileName) {
 	QFile file(fileName);
 	if(file.open(QIODevice::ReadOnly)) {
-		arrFileData = file.readAll();
+		auto arr = file.readAll();
 		file.close();
-		return true;
+		return arr;
 	}
-	reportError(file);
-	return false;
+	return formatError(file);
 }
-bool FileReader::readUnicode(IN const QString & fileName, OUT QString & strFileData) {
-	QByteArray arr;
-	if(!read(fileName, arr))
-		return false;
-	QTextStream readstream(&arr);
-	readstream.setCodec("UTF-8");
-	readstream.setAutoDetectUnicode(true);
-	strFileData = readstream.readAll();
-	return true;
+ReadStatusV<QString> FileReader::readUnicode(const QString & fileName) {
+	auto ret = read(fileName);
+	if(!ret.ok())
+		return ret;
+	QTextStream readStream(ret._v);
+	readStream.setCodec("UTF-8");
+	readStream.setAutoDetectUnicode(true);
+	auto text = readStream.readAll();
+	return {true, text};
 }
-//static
-bool FileReader::readResourceFile(IN const QString & fileName, OUT QByteArray & arrFileData) {
+ReadStatusT<QByteArray> FileReader::readResourceFile(const QString & fileName) {
 	ASSERT(fileName.startsWith(":"));
 	QResource resource(fileName);
 	if(!resource.isValid()) {
 		ASSERT(0);
-		return false;
+		return ReadStatus(QObject::tr("invalid resource %1").arg(fileName));
 	}
 	if(resource.isCompressed()) {
- 		arrFileData = qUncompress(resource.data(), resource.size());
-	} else {
-		arrFileData = QByteArray((LPCSTR)resource.data(), resource.size());
+ 		return qUncompress(resource.data(), resource.size());
 	}
-	return true;
+	return QByteArray((LPCSTR)resource.data(), resource.size());
 }
-//static
-void FileReader::reportError(QFile & file) {
+ReadStatusV<QString> FileReader::readResourceToString(const QString & fileName) {
+	auto s = readResourceFile(fileName);
+	if(!s.ok())
+		return s;
+	QTextStream readStream(s._v);
+	readStream.setCodec("UTF-8");
+	readStream.setAutoDetectUnicode(true);
+	ReadStatusV<QString> ret = ReadStatus(readStream);
+	ret._v = readStream.readAll();
+	return ret;
+}
+ReadStatus FileReader::formatError(const QFile & file) {
 	QString strfileName = file.fileName();
 	strfileName = QFileInfo(strfileName).absoluteFilePath();
-	reportError(strfileName, file.errorString());
+	return formatError(strfileName, file.errorString());
 }
-//static
-void FileReader::reportError(QString file, QString error) {
+ReadStatus FileReader::formatError(const QString & file, const QString & error) {
 	QString msg = QObject::tr("Error reading file '%1': %2\n")
 		.arg(file)
-		.arg(error)
-		;
-	msgBox(msg);
+		.arg(error);
+	return ReadStatus(msg);
 }
