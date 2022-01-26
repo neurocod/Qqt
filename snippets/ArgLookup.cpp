@@ -1,10 +1,11 @@
-//ArgLookup.cpp by Kostya Kozachuk as neurocod
-//Logs passed arguments so you can debug what is going on
+// ArgLookup.cpp by Kostya Kozachuk as neurocod
+// Logs passed arguments so you can debug what is going on
+// BSD license
 #include <QtCore>
 
 int main(int argc, char *argv[]) {
 	QCoreApplication a(argc, argv);
-	QString path = QString("D:/path/to/save/log/args %1.txt")
+	QString path = QString(R"(C:/path/to/save/log/args %1.txt)")
 		.arg(QDateTime::currentDateTime().toString("yyyy.MM.dd HH-mm-ss-zzz"));
 	struct File: public QFile {
 		File(QString path): QFile(path) {}
